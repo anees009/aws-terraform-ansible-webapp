@@ -19,7 +19,8 @@ This repository sets up:
 
 # Project structure
 ```
-$.tree
+$tree
+.
 ├── ansible
 │   ├── roles
 │   │   ├── app_server
@@ -39,7 +40,6 @@ $.tree
 └── vpc.tf
 
 ```
-
 # Usage
 Clone the git repo \
 Execute
