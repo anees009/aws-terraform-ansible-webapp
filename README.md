@@ -74,7 +74,7 @@ Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 **inventory.tmpl** - template file that dynamically creates ansible-inventory once ec2 instances are ready\
 **nginx.tmpl** - template file that dynamically creates nginx.conf, to be used for reverse proxy\
 **ansible/site.yml** - Ansible deployment file containing roles that will be deployed once infrasture is provisioned\
-**ansible/roles/app_server/files/server.py** - Python web app\
+**ansible/roles/app_server/files/server.py** - Python web app
 
 # Disclaimer
 
