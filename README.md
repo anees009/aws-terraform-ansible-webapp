@@ -1,6 +1,6 @@
 # Building a fully automated web-app using AWS, Terraform and Ansible
 
-# Details
+# Goal
 This repository sets up:
 * 1 web-server with Nginx reverse proxy and loadbalancing
 * 2 app-servers with python app serving on port 8000
