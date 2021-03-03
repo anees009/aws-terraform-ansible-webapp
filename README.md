@@ -41,13 +41,14 @@ $.tree
 ```
 
 # Usage
-Clone the git repo
+Clone the git repo \
 Execute
 ```
 # terraform init
 # terraform plan
 # terraform apply
 ```
+Thats all!, by the time you grab your coffee, the deployement will be completed
 Outputs
 Outputs:
 ```
