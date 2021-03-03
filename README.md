@@ -44,8 +44,10 @@ Execute
 # terraform plan
 # terraform apply
 ```
-
-
+Now do 
+```
+# curl http://<Public_IP_web-server/
+```
 
 
 
