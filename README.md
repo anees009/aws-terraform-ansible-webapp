@@ -48,7 +48,7 @@ Execute
 # terraform plan
 # terraform apply
 ```
-Thats all!, by the time you grab your coffee, the deployement will up and running\
+Thats all!, the deployement will up and running in few seconds\
 Outputs:
 ```
 Public_IP = "<Public_IP_web-server>"
@@ -79,4 +79,4 @@ Destroy the infrastructure
 # Disclaimer
 
 The idea here is to setup the working app with minimal effort (1 click), in doing so there are few security concerns that have been over looked and are never recomended in production.
-* AWS private key is generated and stored in working dir (It is always adviced to never do this, instead bring your own key isolated from the environment
+* AWS private key is generated and stored in working dir (It is always adviced to never do this, instead bring your own key isolated from the environment)
