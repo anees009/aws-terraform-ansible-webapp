@@ -1,0 +1,7 @@
+[web-server]
+${web-server-ip} # ${web-server-id}
+
+[app-server]
+%{ for index, ip in app-server-ip ~}
+${ip} # ${app-server-id[index]}
+%{ endfor ~}
