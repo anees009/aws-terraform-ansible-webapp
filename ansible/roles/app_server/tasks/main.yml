@@ -1,0 +1,5 @@
+- name: Upload the python app server
+  copy: src=files/server.py dest="~/" mode=0700
+
+- name: Run the app server
+  shell: nohup python3 server.py </dev/null >/dev/null 2>&1 &

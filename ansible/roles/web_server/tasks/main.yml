@@ -1,0 +1,14 @@
+- name: Install nginx 1.12
+  become: yes
+  command: amazon-linux-extras install nginx1.12 -y
+
+- name: Copy NGINX config file
+  become: yes
+  copy: src=../../../nginx.conf dest="/etc/nginx/nginx.conf" mode=0700
+
+- name: Make Sure NGINX Service Is Running
+  become: yes
+  service:
+    name: nginx
+    state: restarted
+    enabled: yes
