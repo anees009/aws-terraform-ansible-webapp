@@ -4,11 +4,11 @@
 This repository sets up:
 * 1 web-server with Nginx reverse proxy and loadbalancing
 * 2 app-servers with python app serving on port 8000
-## The following AWS resources are also created in the process
+### The following AWS resources are also created in the process
 * 1 Key-pair for ssh connections
 * 1 VPC to isolate the network environment
 * 2 security groups, 1 each for web-server and app-server
-* 
+* 3 AWS EC2 instances 
 
 # Setup
 * Linux client
@@ -63,7 +63,8 @@ Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 # curl http://<Public_IP_web-server>/
 Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
 ```
-```
 
+# Disclaimer
 
-
+The idea here is to setup the working app with minimal effort (1 click), in doing so there are few security concerns that have been over looked and are never recomended in production.
+* AWS private key is generated and stored in working dir (It is always adviced to never do this, instead bring your own key isolated from the environment
