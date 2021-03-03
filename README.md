@@ -1,10 +1,17 @@
 # Building a fully automated web-app using AWS, Terraform and Ansible
 
-# Pre-requisits / Enivornment
-Linux client
-Install Terraform v0.14.7 or higher
-Install ansible 2.9.13 or higher
-AWS free tier account with credentials for IAM user having Admin Access
+# Details
+This repository sets up:
+* 1 web-server with Nginx reverse proxy and loadbalancing
+* 2 app-servers with python app serving on port 8000
+
+# Setup
+* Linux client
+* [Terraform](https://www.terraform.io/) >= 0.14.7
+* [Ansible](https://www.ansible.com/) >= 2.9.13
+* python3
+* AWS free tier account with credentials for IAM user having Admin Access
+* AWS default VPC 
 
 # Project structure
 ```$ tree
@@ -26,9 +33,17 @@ AWS free tier account with credentials for IAM user having Admin Access
 ├── outputs.tf
 └── variables.tf
 
-7 directories, 9 files```
+7 directories, 9 files
+```
 
-dddd
+# Usage
+Clone the git repo
+Execute
+```
+# terraform init
+# terraform plan
+# terraform apply
+```
 
 
 
