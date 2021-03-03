@@ -10,8 +10,8 @@ This repository sets up:
 * 2 security groups, 1 each for web-server and app-server
 * 3 AWS EC2 instances 
 
-# Setup
-* Linux client
+# Setup Requirement
+* Linux client containing
 * [Terraform](https://www.terraform.io/) >= 0.14.7
 * [Ansible](https://www.ansible.com/) >= 2.9.13
 * python3
@@ -69,12 +69,12 @@ Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 
 ```
 # Repository structure
-**main.tf** - contain general infrastructure description\
+**main.tf** - contains general infrastructure description\
 **vpc.tf** - contains vpc details\
 **inventory.tmpl** - template file that dynamically creates ansible-inventory once ec2 instances are ready\
 **nginx.tmpl** - template file that dynamically creates nginx.conf, to be used for reverse proxy\
 **ansible/site.yml** - Ansible deployment file containing roles that will be deployed once infrasture is provisioned\
-**ansible/roles/app_server/files/server.py** - Python web app
+**ansible/roles/app_server/files/server.py** - Python web app to be deployed on app-servers
 
 # Disclaimer
 
