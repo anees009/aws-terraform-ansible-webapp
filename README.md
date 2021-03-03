@@ -4,7 +4,7 @@
 This repository sets up:
 * 1 web-server with Nginx reverse proxy and loadbalancing
 * 2 app-servers with python app serving on port 8000
-The following AWS resources are also created in the process
+##The following AWS resources are also created in the process
 * 1 Key-pair for ssh connections
 * 1 VPC to isolate the network environment
 * 2 security groups, 1 each for web-server and app-server
