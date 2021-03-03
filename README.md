@@ -19,8 +19,8 @@ The following AWS resources are also created in the process
 * AWS default VPC 
 
 # Project structure
-```$ tree
-.
+```
+$.tree
 ├── ansible
 │   ├── roles
 │   │   ├── app_server
@@ -32,13 +32,15 @@ The following AWS resources are also created in the process
 │   │       └── tasks
 │   │           └── main.yml
 │   └── site.yml
+├── inventory
 ├── inventory.tmpl
 ├── main.tf
+├── nginx.conf
 ├── nginx.tmpl
 ├── outputs.tf
-└── variables.tf
+├── variables.tf
+└── vpc.tf
 
-7 directories, 9 files
 ```
 
 # Usage
