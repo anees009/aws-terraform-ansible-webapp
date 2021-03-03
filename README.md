@@ -48,8 +48,7 @@ Execute
 # terraform plan
 # terraform apply
 ```
-Thats all!, by the time you grab your coffee, the deployement will be completed
-Outputs
+Thats all!, by the time you grab your coffee, the deployement will up and running\
 Outputs:
 ```
 Public_IP = "<Public_IP_web-server>"
@@ -64,10 +63,10 @@ Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
 Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
-Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
-Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
-Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
-
+```
+Destroy the infrastructure
+```
+# terraform destroy
 ```
 # Repository structure
 **main.tf** - contains general infrastructure description\
