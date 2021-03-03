@@ -15,8 +15,7 @@ This repository sets up:
 * [Terraform](https://www.terraform.io/) >= 0.14.7
 * [Ansible](https://www.ansible.com/) >= 2.9.13
 * python3
-* AWS free tier account with credentials for IAM user having Admin Access
-* AWS default VPC 
+* AWS free tier account with credentials for IAM user having Admin Access 
 
 # Project structure
 ```
@@ -32,10 +31,8 @@ $.tree
 │   │       └── tasks
 │   │           └── main.yml
 │   └── site.yml
-├── inventory
 ├── inventory.tmpl
 ├── main.tf
-├── nginx.conf
 ├── nginx.tmpl
 ├── outputs.tf
 ├── variables.tf
@@ -58,11 +55,26 @@ Public_IP = "<Public_IP_web-server>"
 ```
 Now do 
 ```
-# curl http://<Public_IP_web-server>/
-Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
-# curl http://<Public_IP_web-server>/
+$ for i in {1..10}; do curl http://<Public_IP_web-server>/; sleep 2; done
 Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
+Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
+
 ```
+# Repository structure
+**main.tf** - contain general infrastructure description
+**vpc.tf** - contains vpc details
+**inventory.tmpl** - template file that dynamically creates ansible-inventory once ec2 instances are ready
+**nginx.tmpl** - template file that dynamically creates nginx.conf, to be used for reverse proxy
+**ansible/site.yml** - Ansible deployment file containing roles that will be deployed once infrasture is provisioned
+**ansible/roles/app_server/files/server.py** - Python web app
 
 # Disclaimer
 
