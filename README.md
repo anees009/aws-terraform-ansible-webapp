@@ -65,6 +65,7 @@ Hi there, I'm served from ip-10-0-0-233.us-east-2.compute.internal!
 Hi there, I'm served from ip-10-0-0-225.us-east-2.compute.internal!
 ```
 Destroy the infrastructure
+{% gist 115ef144e870bd2efd05c00007f210cf %}
 ```
 # terraform destroy
 ```
